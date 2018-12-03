@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>ERCA | Alpha-Web</title>
+
+        <!-- Non-edittable includes -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDfnITFlCXRzMzdTLbQY0weAmntVManZaM",
+                authDomain: "erca-31b15.firebaseapp.com",
+                databaseURL: "https://erca-31b15.firebaseio.com",
+                projectId: "erca-31b15",
+                storageBucket: "erca-31b15.appspot.com",
+                messagingSenderId: "675303388065"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script type="text/javascript">
+            function ready() {
+                document.getElementById('contentPart').clientWidth = parseInt(document.getElementById('adminPageContainer').clientWidth) - parseInt(document.getElementById('sideBar').clientWidth) + "px";
+            }
+        </script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree" rel="stylesheet">
+
+        <!-- Edittable includes -->
+        <link rel="stylesheet" href="../../css/master.css">
+        <link rel="stylesheet" href="../css/master.css">
+
+    </head>
+    <body onload="ready()">
+        <div class="row adminPageContainer" id="adminPageContainer">
+            <div class="col sideBar" id="sideBar">
+
+            </div>
+            <div class="col contentPart" id="contentPart">
+                <div class="headingOfPage">
+                    <div class="headingText">
+                        <span>ADMIN PAGE</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <span>Select a </span>
+                    <div class="row">
+                        <a href="fixture/index.html" class="col"><div>
+                            <div class="">
+                                <img src="" alt="">
+                            </div>
+                            <span>FIXTURE</span>
+                        </div></a>
+                        <a href="videos/index.html" class="col"><div>
+                            <div class="">
+                                <img src="" alt="">
+                            </div>
+                            <span>VIDEOS</span>
+                        </div></a>
+                        <a href="team/index.html" class="col"><div>
+                            <div class="">
+                                <img src="" alt="">
+                            </div>
+                            <span>TEAMS</span>
+                        </div></a>
+                        <a href="stats/index.html" class="col"><div>
+                            <div class="">
+                                <img src="" alt="">
+                            </div>
+                            <span>STATS</span>
+                        </div></a>
+                        <a href="news/index.html" class="col"><div>
+                            <div class="">
+                                <img src="" alt="">
+                            </div>
+                            <span>NEWS</span>
+                        </div></a>
+                        <a href="sponsors/index.html" class="col"><div>
+                            <div class="">
+                                <img src="" alt="">
+                            </div>
+                            <span>SPONSORS</span>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- For optimized loading -->
+    <script src="../js/jquery 3.1.1.min.js"></script>
+    <script src="../js/query.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+    <script type="text/javascript">
+
+    </script>
+</html>

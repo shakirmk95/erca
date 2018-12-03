@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>ERCA | Alpha-Web</title>
+
+        <!-- Non-edittable includes -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDfnITFlCXRzMzdTLbQY0weAmntVManZaM",
+                authDomain: "erca-31b15.firebaseapp.com",
+                databaseURL: "https://erca-31b15.firebaseio.com",
+                projectId: "erca-31b15",
+                storageBucket: "erca-31b15.appspot.com",
+                messagingSenderId: "675303388065"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree" rel="stylesheet">
+
+        <!-- Edittable includes -->
+        <link rel="stylesheet" href="css/master.css">
+
+    </head>
+    <body>
+
+
+        <div class="head" id="home">
+            <div class="row header">
+                <div class="col m3 l4 logoPart" style="text-align: center;">
+                    <img src="img/erca.png" alt="">
+                </div>
+                <div class="col m9 l8 navPart" style="right: 0px;">
+                    <a href="#about" class="element">ABOUT</a>
+                    <a href="#teams" class="element">TEAMS</a>
+                    <a href="#stats" class="element">STATS</a>
+                    <a href="#news" class="element">NEWS</a>
+                    <a href="#sponsors" class="element">SPONSORS</a>
+                </div>
+            </div>
+
+            <div class="fixture" style="width: 100%;">
+                <div class="fixturePart container">
+                    <div class="row" style="width: 600px;margin: auto;">
+                        <div class="arrowLeft col" style="width: 40px;">
+                            <span class="arrow left"></span>
+                        </div>
+                        <div class="fixtureContent col" style="width: 520px;">
+                            <div class="row timeLeftVenue">
+                                <div class="col s6 venue">
+                                    <span>PQR Ground</span>
+                                </div>
+                                <div class="col s6 timeLeft">
+                                    <span>0 days 0 hrs 32 min</span>
+                                </div>
+                            </div>
+                            <div class="matchBetween row" style="padding: 0px;">
+                                <div class="teamA col" style="width: 225px;padding: 16px 0px 16px 15px;">
+                                    <span>XYZ Team</span>
+                                </div>
+                                <div class="middlePart col row" style="width: 70px;height: 60px;position: relative;padding: 0px;left: 11px;">
+                                    <div class="leftSideDesign col" style="width: 60px;height: 60px;padding: 0px;position: absolute;"></div>
+                                    <div class="rightSideDesign col" style="width: 60px;height: 60px;padding: 0px;position: absolute;left: 10px;"></div>
+                                </div>
+                                <div class="teamB col" style="width: 225px;padding: 16px 15px 16px 0px;position: relative;left: 22px;">
+                                    <span>ABC Team</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrowRight col" style="width: 40px;">
+                            <span class="arrow right"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navOnOtherPages">
+            <div class="sideElement">
+                <span class="roundBut"></span>
+                <span class="bottomBar"></span>
+                <a href="#home" class="objName">Home</a>
+            </div>
+            <div class="sideElement active actualActive">
+                <span class="topBar"></span>
+                <span class="roundBut"></span>
+                <span class="bottomBar"></span>
+                <a href="#about" class="objName">About</a>
+            </div>
+            <div class="sideElement">
+                <span class="topBar"></span>
+                <span class="roundBut"></span>
+                <span class="bottomBar"></span>
+                <a href="#teams" class="objName">Teams</a>
+            </div>
+            <div class="sideElement">
+                <span class="topBar"></span>
+                <span class="roundBut"></span>
+                <span class="bottomBar"></span>
+                <a href="#stats" class="objName">Stats</a>
+            </div>
+            <div class="sideElement">
+                <span class="topBar"></span>
+                <span class="roundBut"></span>
+                <span class="bottomBar"></span>
+                <a href="#news" class="objName">News</a>
+            </div>
+            <div class="sideElement">
+                <span class="topBar"></span>
+                <span class="roundBut"></span>
+                <a href="#sponsors" class="objName">Sponsors</a>
+            </div>
+        </div>
+
+        <div class="about odd" id="about">
+            <div class="headingOfPage">
+                <div class="headingText">
+                    <span>ABOUT</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col m6 aboutUsContent row">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="col s12" style="text-align: center;">
+                            <a href="about/index.html" class="">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col m6 videosParent">
+                        <div class="simpleHeadDiv row">
+                            <span class="col s6 simpleHead">VIDEOS</span>
+                            <div class="col s6 emblemOfHead">
+                                <div class="moreButParent">
+                                    <a href="videos/index.html"class="moreBut">
+                                        MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row videosDiv">
+                            <div class="col s6 videoDiv">
+                                <div class="imageDiv">
+                                    <img src="" alt="">
+                                    <div class="playBut"></div>
+                                </div>
+                                <div class="videoDisc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="col s6 videoDiv">
+                                <div class="imageDiv">
+                                    <img src="" alt="">
+                                    <div class="playBut"></div>
+                                </div>
+                                <div class="videoDisc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="col s6 videoDiv">
+                                <div class="imageDiv">
+                                    <img src="" alt="">
+                                    <div class="playBut"></div>
+                                </div>
+                                <div class="videoDisc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                            <div class="col s6 videoDiv">
+                                <div class="imageDiv">
+                                    <img src="" alt="">
+                                    <div class="playBut"></div>
+                                </div>
+                                <div class="videoDisc">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="teams even" id="teams">
+            <div class="headingOfPage">
+                <div class="headingText">
+                    <span>TEAMS</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col m4">
+                        <a href="team/index.html"><div class="teamImageDiv" team="3">
+                            <img src="img/logo-01.jpg" alt="">
+                            <div>ROYAL CRICKETERS</div>
+                        </div></a>
+                    </div>
+                    <div class="col m4">
+                        <a href="team/index.html"><div class="teamImageDiv" team="3">
+                            <img src="img/logo-02.jpg" alt="">
+                            <div>ROYAL CRICKETERS</div>
+                        </div></a>
+                    </div>
+                    <div class="col m4">
+                        <a href="team/index.html"><div class="teamImageDiv" team="3">
+                            <img src="img/logo-03.jpg" alt="">
+                            <div>ROYAL CRICKETERS</div>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="bubbles">
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="stats odd" id="stats">
+            <div class="headingOfPage">
+                <div class="headingText">
+                    <span>STATS</span>
+                </div>
+            </div>
+            <div class="container">
+                <table>
+                    <tr>
+                        <th class="" style="text-align: left;">TEAM</th>
+                        <th class="" style="text-align: center;">MAT</th>
+                        <th class="" style="text-align: center;">WON</th>
+                        <th class="" style="text-align: center;">LOST</th>
+                        <th class="" style="text-align: center;">TIE</th>
+                        <th class="" style="text-align: center;">NR</th>
+                        <th class="" style="text-align: center;">PTS</th>
+                        <th class="" style="text-align: center;">NRR</th>
+                    </tr>
+                    <tr>
+                        <td class="" style="text-align: left;">ROYAL CRICKETERS</td>
+                        <td class="" style="text-align: center;">10</td>
+                        <td class="" style="text-align: center;">3</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">14</td>
+                        <td class="" style="text-align: center;">+0.823</td>
+                    </tr>
+                    <tr>
+                        <td class="" style="text-align: left;">ROYAL CRICKETERS</td>
+                        <td class="" style="text-align: center;">10</td>
+                        <td class="" style="text-align: center;">3</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">14</td>
+                        <td class="" style="text-align: center;">+0.823</td>
+                    </tr>
+                    <tr>
+                        <td class="" style="text-align: left;">ROYAL CRICKETERS</td>
+                        <td class="" style="text-align: center;">10</td>
+                        <td class="" style="text-align: center;">3</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">14</td>
+                        <td class="" style="text-align: center;">+0.823</td>
+                    </tr>
+                    <tr>
+                        <td class="" style="text-align: left;">ROYAL CRICKETERS</td>
+                        <td class="" style="text-align: center;">10</td>
+                        <td class="" style="text-align: center;">3</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">14</td>
+                        <td class="" style="text-align: center;">+0.823</td>
+                    </tr>
+                    <tr>
+                        <td class="" style="text-align: left;">ROYAL CRICKETERS</td>
+                        <td class="" style="text-align: center;">10</td>
+                        <td class="" style="text-align: center;">3</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">0</td>
+                        <td class="" style="text-align: center;">14</td>
+                        <td class="" style="text-align: center;">+0.823</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- table # 919191-->
+        </div>
+
+
+        <div class="news even" id="news">
+            <div class="headingOfPage">
+                <div class="headingText">
+                    <span>NEWS</span>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col m6 recentNews">
+                        <div class="" style="margin: 0px 20px;">
+                            <div class="simpleHeadDiv row">
+                                <span class="col s6 simpleHead">RECENT</span>
+                                <div class="col s6 emblemOfHead">
+                                    <div class="moreButParent">
+                                        <a href="news/index.html"class="moreBut">MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eachNews row">
+                                <div class="col sizeEqualHeight">
+                                    <img src="img/erca.png" width="100px" alt="">
+                                </div>
+                                <div class="col newsContent">
+                                    <div class="newsHeadDiv">
+                                        <a href="news_content/index.html" newsid="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</a>
+                                    </div>
+                                    <div class="row" style="margin: 0px;font-size:10px;">
+                                        <span class="col s6" style="padding: 0px;">21-10-2018</span>
+                                        <span class="col s6" style="text-align: right;padding: 0px;">1000 likes</span>
+                                    </div>
+                                    <div class="newsDescDiv">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eachNews row">
+                                <div class="col sizeEqualHeight">
+                                    <img src="img/erca.png" width="100px" alt="">
+                                </div>
+                                <div class="col newsContent">
+                                    <div class="newsHeadDiv">
+                                        <a href="news_content/index.html" newsid="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</a>
+                                    </div>
+                                    <div class="row" style="margin: 0px;font-size:10px;">
+                                        <span class="col s6" style="padding: 0px;">21-10-2018</span>
+                                        <span class="col s6" style="text-align: right;padding: 0px;">1000 likes</span>
+                                    </div>
+                                    <div class="newsDescDiv">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eachNews row">
+                                <div class="col sizeEqualHeight">
+                                    <img src="img/erca.png" width="100px" alt="">
+                                </div>
+                                <div class="col newsContent">
+                                    <div class="newsHeadDiv">
+                                        <a href="news_content/index.html" newsid="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</a>
+                                    </div>
+                                    <div class="row" style="margin: 0px;font-size:10px;">
+                                        <span class="col s6" style="padding: 0px;">21-10-2018</span>
+                                        <span class="col s6" style="text-align: right;padding: 0px;">1000 likes</span>
+                                    </div>
+                                    <div class="newsDescDiv">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m6 popularNews">
+                        <div class="" style="margin: 0px 20px;">
+                            <div class="simpleHeadDiv row">
+                                <span class="col s6 simpleHead">POPULAR</span>
+                            </div>
+                            <div class="eachNews row">
+                                <div class="col sizeEqualHeight">
+                                    <img src="img/erca.png" width="100px" alt="">
+                                </div>
+                                <div class="col newsContent">
+                                    <div class="newsHeadDiv">
+                                        <a href="news_content/index.html" newsid="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</a>
+                                    </div>
+                                    <div class="row" style="margin: 0px;font-size:10px;">
+                                        <span class="col s6" style="padding: 0px;">21-10-2018</span>
+                                        <span class="col s6" style="text-align: right;padding: 0px;">1000 likes</span>
+                                    </div>
+                                    <div class="newsDescDiv">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eachNews row">
+                                <div class="col sizeEqualHeight">
+                                    <img src="img/erca.png" width="100px" alt="">
+                                </div>
+                                <div class="col newsContent">
+                                    <div class="newsHeadDiv">
+                                        <a href="news_content/index.html" newsid="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</a>
+                                    </div>
+                                    <div class="row" style="margin: 0px;font-size:10px;">
+                                        <span class="col s6" style="padding: 0px;">21-10-2018</span>
+                                        <span class="col s6" style="text-align: right;padding: 0px;">1000 likes</span>
+                                    </div>
+                                    <div class="newsDescDiv">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eachNews row">
+                                <div class="col sizeEqualHeight">
+                                    <img src="img/erca.png" width="100px" alt="">
+                                </div>
+                                <div class="col newsContent">
+                                    <div class="newsHeadDiv">
+                                        <a href="news_content/index.html" newsid="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</a>
+                                    </div>
+                                    <div class="row" style="margin: 0px;font-size:10px;">
+                                        <span class="col s6" style="padding: 0px;">21-10-2018</span>
+                                        <span class="col s6" style="text-align: right;padding: 0px;">1000 likes</span>
+                                    </div>
+                                    <div class="newsDescDiv">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sponsors odd" id="sponsors">
+            <div class="headingOfPage">
+                <div class="headingText">
+                    <span>SPONSORS</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s3">
+                        <img src="" alt="">
+                    </div>
+                    <div class="col s3">
+                        <img src="" alt="">
+                    </div>
+                    <div class="col s3">
+                        <img src="" alt="">
+                    </div>
+                    <div class="col s3">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="bubbles">
+
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col m4">
+                            <div class="simpleHeadDiv row">
+                                <span class="col s6 simpleHead">WHATS NEW</span>
+                            </div>
+                            <div class="footerNewContent">
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="col m4">
+
+                        </div>
+                        <div class="col m4">
+                            <div class="simpleHeadDiv row">
+                                <span class="col s6 simpleHead">CONTACT</span>
+                            </div>
+                            <div class="footerContactContent">
+                                <p>Phone: +966 12 546 185</p>
+                                <p>Email: info@erca.com</p>
+                                <p>Careers: careers@erca.com</p>
+                                <p>Sales: sales@erca.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- For optimized loading -->
+    <script src="js/jquery 3.1.1.min.js"></script>
+    <script src="js/query.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+    <script type="text/javascript">
+
+    </script>
+</html>

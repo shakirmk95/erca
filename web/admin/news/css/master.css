@@ -1,0 +1,9 @@
+html, body, .loginInside {
+    height: 100%;
+    width: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.loginInside {
+    padding: 25px 0px 25px;
+}

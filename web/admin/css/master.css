@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.adminPageContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.sideBar {
+    height: 100%;
+    width: 50px;
+    background: #444;
+}
+
+.contentPart {
+    height: 100%;
+}

@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.headInside {
+    background-image: url(../../img/header.jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px;
+}
+
+.headInside .header {
+    margin: 0px;
+    height: 150px;
+}
+
+.logoPart img {
+    height: 150px;
+    padding: 10px;
+}
+
+.contentInside {
+    padding: 25px 0px 25px;
+}
+
+.newsImgDiv {
+    height: 300px;
+}
+
+.sideBarNews {
+    margin: 0px 0px 0px 10px;
+}
+
+.sideBarNews .eachNews {
+    padding: 10px 0px 0px 0px ;
+}
+
+.newsImgDivSide {
+    height: 150px;
+    background: #ccc;
+}
+
+.newsHeadDiv a {
+    color: #333;
+}
+
+.newsHeadDiv a:hover {
+    color: #000;
+}
+
+.contentInside .newsContent {
+    padding: 0px;
+}
+
+.footer {
+    position: relative;
+}

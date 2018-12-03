@@ -1,0 +1,479 @@
+html, body, .head, .about, .teams, .stats, .news, .sponsors {
+    height: 100%;
+    width: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.head {
+    background-image: url('../img/background.jpg');
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.header {
+    height: 100px;
+    background-color: #0000004d;
+    position: relative;
+}
+
+.navPart {
+    text-align: right;
+    position: absolute;
+    bottom: 27px;
+}
+
+.logoPart img {
+    height: 100px;
+    padding: 5px;
+}
+
+.element {
+    color: #d6d6d6;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 18px;
+    font-size: 14px;
+    transition: color 0.2s linear, background 0.2s linear;
+}
+
+@media screen and (max-width: 665px) {
+    .navPart {
+        display: none;
+    }
+}
+
+@media screen (max-width: 800px) {
+    .element {
+        margin: 2px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1019px) {
+    .element {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .element {
+        margin: 20px;
+    }
+}
+
+.element:hover {
+    color: #fff;
+    background: #00000029;
+}
+
+@media screen and (min-width: 601px) and (max-width: 706px) {
+    .fixturePart.container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .fixture {
+        display: none;
+    }
+}
+
+.navOnOtherPages {
+    position: fixed;
+    right: 50px;
+    top: 70px;
+    text-align: right;
+    z-index: 1;
+}
+
+.sideElement {
+    padding: 3px 0px;
+    font-size: 13px;
+    transition: font-size 0.2s, font-weight 0.1s;
+    color: rgba(0,0,0,0.87);
+}
+
+.sideElement.active {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sideElement:hover {
+    font-weight: 600;
+}
+
+.roundBut {
+    background: #ccc;
+    border-radius: 15px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #efefef;
+    position: absolute;
+    right: 0px;
+    box-shadow: 0px 0px 1px #ccc;
+    margin-top: 3px;
+}
+
+.sideElement.active .roundBut {
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+    right: -1px;
+}
+
+.objName {
+    margin-right: 25px;
+    cursor: pointer;
+    color: rgba(0,0,0,0.87);
+}
+
+.bottomBar {
+    background: #ccc;
+    position: absolute;
+    width: 4px;
+    height: 6px;
+    right: 5px;
+    margin-top: 18px;
+}
+
+.topBar {
+    background: #ccc;
+    position: absolute;
+    width: 4px;
+    height: 6px;
+    right: 5px;
+    margin-top: -4px;
+}
+
+.sideElement.active .topBar {
+    margin-top: -4px;
+}
+
+.sideElement.active .bottomBar {
+    margin-top: 21px;
+}
+
+.arrow {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: 10px solid #00000036;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: border 0.5s;
+    position: absolute;
+    top: 32%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.arrow.right {
+    border-bottom: none;
+    border-left: none;
+}
+
+.arrow.left {
+    border-top: none;
+    border-right: none;
+}
+
+.arrow:hover {
+    border-color: #0000005a;
+}
+
+.fixture {
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+}
+
+.fixtureContent {
+    background-color: #3f3f3f8f;
+    color: #d6d6d6;
+    font-size: 13px;
+    padding: 0px;
+    height: 90px;
+    position: relative;
+}
+
+.timeLeftVenue {
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+.timeLeft {
+    text-align: right;
+}
+
+.matchBetween {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+}
+
+.teamA, .teamB {
+    font-size: 18px;
+    background-color: #e2c227;
+    font-weight: 600;
+    color: #444;
+    height: 100%;
+}
+
+.teamB {
+    text-align: right;
+}
+
+.leftSideDesign {
+    height: 100%;
+    border-left: 30px solid #e2c227;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #e2c227;
+    border-bottom: 30px solid transparent;
+}
+
+.rightSideDesign {
+    height: 100%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid #e2c227;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid #e2c227;
+}
+
+.odd, .even {
+    padding-top: 50px;
+}
+
+.odd {
+    background-color: #EFEFEF;
+    color: #333333;
+}
+
+.even {
+    background-color: #666666;
+    color: #EFEFEF;
+}
+
+.headingOfPage {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.headingText {
+    height: 75px;
+    padding-top: 45px;
+    position: relative;
+    margin: auto;
+    width: 270px;
+    text-align: center;
+}
+
+.odd .headingText {
+    border-bottom: 1px solid #3333334a;
+}
+
+.even .headingText {
+    border-bottom: 1px solid #EFEFEF4a;
+}
+
+.aboutUsContent p {
+    text-align: right;
+    font-size: 16px;
+    padding-right: 25px;
+}
+
+.simpleHeadDiv {
+    border-bottom: 1px solid #b9b9b9;
+    margin: 0px 0px 5px 0px;
+}
+
+.moreBut {
+    background: #ED1C24;
+    border-radius: 11px;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #fff;
+    margin-bottom: 22px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.moreBut:hover {
+    background: #cc171e;
+}
+
+.moreBut:active {
+    background: #bd0007;
+}
+
+.moreButParent {
+    position: absolute;
+    right: 0px;
+    top: -5px;
+}
+
+.videoDiv.col {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.videoDiv.col:hover {
+    background: #cccccc50;
+}
+
+.videoDiv.col:active {
+    background: #cccccc90;
+}
+
+.videosParent {
+    padding-left: 25px;
+}
+
+.emblemOfHead {
+    text-align: right;
+    position: relative;
+}
+
+.imageDiv {
+    height: 120px;
+    background-color: #666666;
+}
+
+.videoDisc p {
+    font-size: 11px;
+}
+
+
+.teamImageDiv {
+    margin: 0px 25px;
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.teamImageDiv:hover {
+    /* background: #cccccc50; */
+}
+
+.teamImageDiv:active {
+    /* background: #cccccc90; */
+}
+
+.teamImageDiv div {
+    color: #444;
+    font-weight: 900;
+    font-size: 19px;
+    padding: 10px;
+}
+
+.sizeEqualHeight.col {
+    width: 100px;
+    padding: 0px;
+    background: #ccc;
+    height: 100px;
+}
+
+.newsContent {
+    padding: 0px 0px 0px 20px;
+}
+
+.newsHeadDiv {
+    max-height: 45px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    height: 45px;
+}
+
+.newsHeadDiv a {
+    color: #fff;
+    position: relative;
+    top: -4px;
+}
+
+.newsHeadDiv a:hover {
+    color: #d1d1d1;
+}
+
+.eachNews.row {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.newsDescDiv {
+    max-height: 40px;
+    height: 40px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+}
+
+.newsDescDiv p {
+    font-size: 12px;
+    margin: 0px;
+    position: relative;
+    top: 7px;
+}
+
+.dateOfNews, .likesOfNews {
+    padding: 0px;
+}
+
+.likesOfNews {
+    text-align: right;
+}
+
+.sponsors {
+    position: relative;
+}
+
+.footer {
+    padding: 45px;
+    background-color: #1E1E1E;
+    color: #ababab;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 33%;
+    min-height: 250px;
+    font-size: 14px;
+    z-index: 2;
+}
+
+.footerNewContent, .footerContactContent {
+    padding-top: 2px;
+    font-size: 12px;
+}
+
+.footerNewContent p, .footerContactContent p {
+    margin: 8px 0px;
+}

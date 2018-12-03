@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.headInside {
+    background-image: url(../../img/header.jpg);
+    background-size: cover;
+    position: relative;
+    height: 150px;
+}
+
+.headInside .header {
+    margin: 0px;
+    height: 150px;
+}
+
+.logoPart img {
+    height: 150px;
+    padding: 10px;
+}
+
+.videosInside {
+    padding: 25px 0px 25px;
+    min-height: 510px;
+}
+
+.videoBigDiv .videoDiv {
+    margin: 0px 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.videoDiv:hover {
+    background: #cccccc50;
+}
+
+.videoDiv:active {
+    background: #cccccc90;
+}
+
+.footer {
+    position: relative;
+}

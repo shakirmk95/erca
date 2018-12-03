@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>ERCA | Alpha-Web</title>
+
+        <!-- Non-edittable includes -->
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDfnITFlCXRzMzdTLbQY0weAmntVManZaM",
+                authDomain: "erca-31b15.firebaseapp.com",
+                databaseURL: "https://erca-31b15.firebaseio.com",
+                projectId: "erca-31b15",
+                storageBucket: "erca-31b15.appspot.com",
+                messagingSenderId: "675303388065"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree" rel="stylesheet">
+
+        <!-- Edittable includes -->
+        <link rel="stylesheet" href="../css/master.css">
+        <link rel="stylesheet" href="css/master.css">
+
+    </head>
+    <body>
+
+
+        <div class="headInside" id="home">
+            <div class="row header">
+                <div class="col m3 l4 logoPart" style="text-align: center;">
+                    <img src="../img/erca.png" alt="">
+                </div>
+                <div class="col m9 l8 navPart" style="right: 0px;">
+                    <a href="../index.html#home" class="element">HOME</a>
+                    <a href="../index.html#about" class="element">ABOUT</a>
+                    <a href="../index.html#teams" class="element">TEAMS</a>
+                    <a href="../index.html#stats" class="element">STATS</a>
+                    <a href="../index.html#news" class="element">NEWS</a>
+                    <a href="../index.html#sponsors" class="element">SPONSORS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentInside odd" id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col m8">
+                        <div class="newsImgDiv" style="background: #ccc;">
+                            <img src="" alt="">
+                        </div>
+                        <div class="newsContentDiv">
+                            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h3>
+                            <div class="row">
+                                <span class="col s6" style="font-size: 12px;">20-11-2018 | 12:00 PM</span>
+                                <span class="col s6" style="text-align: right;font-size: 12px;">1000 Likes</span>
+                            </div>
+                            <div class="">
+                                <p>Rohit Sharma, one of India's limited-overs mainstays, has had trouble nailing down his spot in Tests. Having made his debut in the longest format in 2013, Rohit has made just 25 appearance in it, and has reached a stage, by his own admission, where he isn't fretting over whether or not he'll be picked. The recently-turned 31-year-old has instead, decided to focus on a rather different theory.</p>
+                                <p>"There's limited time you have as a player and I have finished almost half of it. There's no point in spending the remaining half thinking whether I'll be picked or not. I am going forward with the theory of 'whatever time I have make it count'," Rohit Sharma told PTI.</p>
+                                <p>In the 25 Tests Rohit has played, he has scored 1479 runs at an average of 39.97. Though he made an impact on debut against West Indies at home five years ago, inconsistent returns have seen him get in and out of the team regularly. After an underwhelming show on the recent tour of South Africa [78 runs in four innings at an average of 19.50] Rohit has missed out on a spot in Test squad for the one-off game against Afghanistan.</p>
+                                <p>Rohit, however, appears to have made a clear decision of not getting bogged down by all the uncertainty that comes with his Test selection. "For me, I am not at a stage to worry about whether I'll be picked or not. I need to enjoy my game. The first five-six years of my career, it was all about 'oh, will I be picked? Will I play'! Now it's all about enjoying the game. These things keeps adding pressure on you. Instead, it's best to enjoy yourself in what you do and give your best," he said.</p>
+                                <p>Rohit also cited the freak injury that delayed his Test debut by three years, explaining why he believed 'there's time for everything'. "I got into the national team when I was 20 and I made my Test debut when I was 26. I had an opportunity to make my debut in 2010, but I missed that (due to a freak injury while playing football at practice). After that, it made me realise that the more you want, your attitude changes. I have realised there's time for everything.</p>
+                                <p>"There has to be time and a slot available for it. The seniors - Sachin, Rahul, VVS and Sourav - were all playing then so we had to wait. After a point, I realised there's no point thinking about it (selection)," Rohit added.</p>
+                                <p>But having said all of this, Rohit opposed the idea that he was now an ODI, T20I specialist only. "By no means. As a child, all I dreamt of was to play Test cricket and that dream will never be over. Nobody can take away my game or what I think about the game. Selectors can do what is best in their control, players will do what is in their control. It's important to keep focus. When I started playing cricket, there was no white ball cricket. We used to play in school, in age-group cricket with red ball. White ball came much later. As a child, you only saw red ball cricket," Rohit said.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m4">
+                        <div class="sideBarNews">
+                            <div class="simpleHeadDiv row">
+                                <span class="col s6 simpleHead">RELATED</span>
+                            </div>
+                            <div class="eachNews" style="margin-bottom: 15px;">
+                                <div class="newsImgDivSide">
+                                    <img src="img/erca.png" width="100px" alt="">
+                                </div>
+                                <div class="newsContent" style="margin-top: 10px;">
+                                    <div class="newsHeadDiv">
+                                        <a href="news_content/index.html" newsid="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</a>
+                                    </div>
+                                    <div class="row" style="margin: 0px;font-size:10px;">
+                                        <span class="col s6" style="padding: 0px;">21-10-2018</span>
+                                        <span class="col s6" style="text-align: right;padding: 0px;">1000 likes</span>
+                                    </div>
+                                    <div class="newsDescDiv">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="eachNews">
+                                <div class="newsImgDivSide">
+                                    <img src="img/erca.png" width="100px" alt="">
+                                </div>
+                                <div class="newsContent" style="margin-top: 10px;">
+                                    <div class="newsHeadDiv">
+                                        <a href="news_content/index.html" newsid="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</a>
+                                    </div>
+                                    <div class="row" style="margin: 0px;font-size:10px;">
+                                        <span class="col s6" style="padding: 0px;">21-10-2018</span>
+                                        <span class="col s6" style="text-align: right;padding: 0px;">1000 likes</span>
+                                    </div>
+                                    <div class="newsDescDiv">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footerPart" id="footer">
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col m4">
+                            <div class="simpleHeadDiv row">
+                                <span class="col s6 simpleHead">WHATS NEW</span>
+                            </div>
+                            <div class="footerNewContent">
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+                        <div class="col m4">
+
+                        </div>
+                        <div class="col m4">
+                            <div class="simpleHeadDiv row">
+                                <span class="col s6 simpleHead">CONTACT</span>
+                            </div>
+                            <div class="footerContactContent">
+                                <p>Phone: +966 12 546 185</p>
+                                <p>Email: info@erca.com</p>
+                                <p>Careers: careers@erca.com</p>
+                                <p>Sales: sales@erca.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- For optimized loading -->
+    <script src="js/jquery 3.1.1.min.js"></script>
+    <script src="js/query.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+    <script type="text/javascript">
+
+    </script>
+</html>
